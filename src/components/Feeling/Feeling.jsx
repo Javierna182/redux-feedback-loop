@@ -1,3 +1,6 @@
+import Understanding from "../Understanding/Understanding";
+
+
 function Feeling() {
     return(
         <div>
