@@ -18,13 +18,14 @@ routerFeedback.get("/", (req, res) => {
 
 //to POST all new feedback
 routerFeedback.post("/", (req, res) => {
+  console.log(req.body);
     const newFeedback = req.body;
     const queryText = `INSERT INTO feedback ("feeling", "understanding", "support", "comments")
                        VALUES ($1, $2, $3, $4)`;
     const queryFeedback = [
         newFeedback.feeling,
         newFeedback.understanding,
-        newFeedback.support,
+        newFeedback.supported,
         newFeedback.comments,
     ];
     pool

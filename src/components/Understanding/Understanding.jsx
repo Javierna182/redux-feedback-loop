@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
+
 
 
 function Understanding() {
     const [newUnderstanding, setNewUnderstanding] = useState('');
     const dispatch = useDispatch();
+    const history = useHistory();  
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -13,6 +16,7 @@ function Understanding() {
             payload: newUnderstanding
         });
         setNewUnderstanding('');
+        history.push('/supported');
     };
 
 
@@ -21,7 +25,7 @@ function Understanding() {
             <h1>How well are you understanding the content?</h1>
             <form onSubmit={handleSubmit}>
             <input
-              type="text"
+              type="number"
               value={newUnderstanding}
               placeholder="Understanding?"
               onChange={event => setNewUnderstanding(event.target.value)}

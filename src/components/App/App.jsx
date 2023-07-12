@@ -11,6 +11,7 @@ import Supported from '../Supported/Supported';
 import Comments from '../Comments/Comments';
 import Review from '../Review/Review'; 
 import GetStarted from '../GetStarted/GetStarted';
+import Completed from '../Completed/Completed';
 
 function App() {
 
@@ -38,12 +39,16 @@ function App() {
             <Supported/>
           </Route>
 
-          <Route exact path="comments">
+          <Route exact path="/comments">
             <Comments/>
           </Route>
 
-          <Route exact path="review">
+          <Route exact path="/review">
             <Review/>
+          </Route>
+
+          <Route exact path="/completed">
+            <Completed/>
           </Route>
       </Router>
     </StoreProvider>
