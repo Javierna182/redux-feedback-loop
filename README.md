@@ -25,14 +25,16 @@ the system is a multi-part form that allows users to leave feedback for today.
 There is 4 views for the form parts.
 
 The parts:
+- Home page
+![home](wireframes/img1.png)
 - How are you feeling today?
-![feeling](img2.png)
+![feeling](wireframes/img2.png)
 - How well are you understanding the content?
-![understanding](img3.png)
+![understanding](wireframes/img3.png)
 - How well are you being supported?
-![support](img4.png)
+![support](wireframes/img4.png)
 - Any comments you want to leave?
-![comments](img5.png)
+![comments](wireframes/img5.png)
 
 There is no nav bar, each part of the form has its own route. Clicking next move the user to the appropriate step in the process.
 
@@ -40,7 +42,7 @@ There is no nav bar, each part of the form has its own route. Clicking next move
 
 The last step of the process allows the user to review their feedback.
 
-![comments](img6.png)
+![comments](wireframes/img6.png)
 
 ## SUBMIT THE FEEDBACK
 
@@ -48,7 +50,7 @@ The `Review` step has a submit button which completes the feedback to the server
 
 When the submit button is clicked, save the submission in the database. The user can see a submission success page. They can then click the button to take a new survey.
 
-![understanding](img7.png)
+![understanding](wireframes/img7.png)
 
 ## Credits
 
