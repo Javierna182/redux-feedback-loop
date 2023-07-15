@@ -19,7 +19,7 @@ function Review() {
         <div>
             <form>
             <h1>Review Your Feedback</h1>
-            <h2>Feelings:{store.feeling}</h2>
+            <h2>Feeling:{store.feeling}</h2>
             <h2>Understanding:{store.understanding}</h2>
             <h2>Supported:{store.supported}</h2>
             <h2>Comments:{store.comments}</h2>

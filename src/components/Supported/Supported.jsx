@@ -25,14 +25,14 @@ function Supported() {
             setSupported('');
             history.push('/comments');
         }else {
-            alert('Must fill up the form');
+            alert('Must fill out the form to continue');
         }
     }
 
 
     return(
         <div>
-            <h1>How are you being Supported?</h1>
+            <h1>I am feeling supported</h1>
             <form onSubmit={handleSubmit}>
             <FormControl sx={{ m: 1, minWidth: 80 }}>    
             <Stack spacing={2} sx={{ maxWidth: '200px', margin: 'auto'}}>
@@ -45,13 +45,13 @@ function Supported() {
               autoWith
               label="Supported?"           
             >
-            <MenuItem value={1}>1. One</MenuItem>
-            <MenuItem value={2}>2. Two</MenuItem>
-            <MenuItem value={3}>3. Three</MenuItem>
-            <MenuItem value={4}>4. Four</MenuItem>
-            <MenuItem value={5}>5. Five</MenuItem>
+            <MenuItem value={1}>1. Strongly Disagree</MenuItem>
+            <MenuItem value={2}>2. Disagree</MenuItem>
+            <MenuItem value={3}>3. Neither Agree nor Disagree</MenuItem>
+            <MenuItem value={4}>4. Agree</MenuItem>
+            <MenuItem value={5}>5. Strongly Agree</MenuItem>
             </Select>
-            <FormHelperText>Please select your from 1 - 5</FormHelperText>    
+            <FormHelperText>Please select from 1 - 5</FormHelperText>    
             <Button variant="contained" type="submit">NEXT</Button>
             </Stack>
             </FormControl>

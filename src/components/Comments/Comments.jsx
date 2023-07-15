@@ -27,7 +27,7 @@ function Comments() {
 
     return(
         <div>
-            <h1>Any comments you want to leave?</h1>
+            <h1>Any additional comments you want to leave?</h1>
             <form onSubmit={handleSubmit}>
             <FormControl sx={{ m: 1, minWidth: 80 }}>     
             <Stack spacing={2} sx={{ maxWidth: '200px', margin: 'auto'}}>    

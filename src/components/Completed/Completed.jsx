@@ -5,7 +5,7 @@ import Button from '@mui/material/Button';
 function Completed() {
     return(
         <div>
-            <h1>All Done, Good job!</h1>
+            <h1>All done, Thank you!</h1>
             <Link to="/">
             <Button variant="contained">Start Over</Button>
             </Link>

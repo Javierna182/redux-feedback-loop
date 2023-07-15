@@ -18,8 +18,8 @@ function App() {
   return (
     <div className='App'>
       <header className='App-header'>
-        <h1 className='App-title'>Feedback!</h1>
-        <h4>Don't forget it!</h4>
+        <h1 className='App-title'>Your Feedback is Valued!</h1>
+        <h4>Share your experience with us by answering the statement below</h4>
       </header>
       <StoreProvider>
         <Router>
